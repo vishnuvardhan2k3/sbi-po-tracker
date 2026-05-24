@@ -30,67 +30,79 @@ const MOTIVATIONAL = [
 
 // All topics in rotation
 const FLAT_TOPICS = [
+
   // Reasoning
-  { id:"r1",  name:"Puzzles & Seating Arrangement", sub:"Linear, Circular, Floor, Box, Month-based",          subject:"Reasoning", weight:4 },
-  { id:"r2",  name:"Syllogism",                      sub:"All/Some/No, Possibility cases",                     subject:"Reasoning", weight:2 },
-  { id:"r3",  name:"Inequality",                     sub:"Direct & Coded Inequality",                          subject:"Reasoning", weight:2 },
-  { id:"r4",  name:"Coding-Decoding",                sub:"Letter shifting, Number pattern",                    subject:"Reasoning", weight:2 },
-  { id:"r5",  name:"Blood Relations",                sub:"Family tree, Coded relations",                       subject:"Reasoning", weight:2 },
-  { id:"r6",  name:"Direction & Distance",           sub:"North/South/East/West problems",                    subject:"Reasoning", weight:1 },
-  { id:"r7",  name:"Alphanumeric Series",            sub:"Letter-number pattern",                              subject:"Reasoning", weight:1 },
-  { id:"r8",  name:"Input-Output",                   sub:"Word/number shifting machines",                      subject:"Reasoning", weight:2 },
-  { id:"r9",  name:"Order & Ranking",                sub:"Top/Bottom/Position based",                          subject:"Reasoning", weight:1 },
-  { id:"r10", name:"Data Sufficiency",               sub:"2-statement DS problems",                            subject:"Reasoning", weight:2 },
-  { id:"r11", name:"Critical Reasoning",             sub:"Cause-Effect, Assumption, Argument",                 subject:"Reasoning", weight:2 },
-  { id:"r12", name:"Miscellaneous Reasoning",        sub:"Analogy, Classification, Statement-Conclusion",      subject:"Reasoning", weight:1 },
+  { id:"r1",  name:"Puzzles & Seating Arrangement", sub:"Linear, Circular, Floor, Box, Month-based", subject:"Reasoning", weight:4 },
+  { id:"r2",  name:"Syllogism", sub:"All/Some/No, Possibility cases", subject:"Reasoning", weight:2 },
+  { id:"r3",  name:"Inequality", sub:"Direct & Coded Inequality", subject:"Reasoning", weight:2 },
+  { id:"r4",  name:"Coding-Decoding", sub:"Letter shifting, Number pattern", subject:"Reasoning", weight:2 },
+  { id:"r5",  name:"Blood Relations", sub:"Family tree, Coded relations", subject:"Reasoning", weight:2 },
+  { id:"r6",  name:"Direction & Distance", sub:"North/South/East/West problems", subject:"Reasoning", weight:1 },
+  { id:"r7",  name:"Alphanumeric Series", sub:"Letter-number pattern", subject:"Reasoning", weight:1 },
+  { id:"r8",  name:"Input-Output", sub:"Word/number shifting machines", subject:"Reasoning", weight:2 },
+  { id:"r9",  name:"Order & Ranking", sub:"Top/Bottom/Position based", subject:"Reasoning", weight:1 },
+  { id:"r10", name:"Data Sufficiency", sub:"2-statement DS problems", subject:"Reasoning", weight:2 },
+
   // Quant
-  { id:"q1",  name:"Number System & Simplification",sub:"BODMAS, Approximation, Surds",                       subject:"Quant",     weight:2 },
-  { id:"q2",  name:"Number Series",                  sub:"Missing term, Wrong term",                           subject:"Quant",     weight:2 },
-  { id:"q3",  name:"Quadratic Equations",            sub:"Comparing roots of two equations",                   subject:"Quant",     weight:2 },
-  { id:"q4",  name:"Data Interpretation",            sub:"Bar, Line, Pie, Tabular, Caselet",                  subject:"Quant",     weight:5 },
-  { id:"q5",  name:"Percentage",                     sub:"Increase/Decrease, Applications",                    subject:"Quant",     weight:2 },
-  { id:"q6",  name:"Ratio & Proportion",             sub:"Direct, Inverse, Mixtures",                          subject:"Quant",     weight:2 },
-  { id:"q7",  name:"Average",                        sub:"Mean, Weighted average",                             subject:"Quant",     weight:1 },
-  { id:"q8",  name:"Profit & Loss",                  sub:"SP/CP, Discount, Marked price",                      subject:"Quant",     weight:2 },
-  { id:"q9",  name:"Simple & Compound Interest",     sub:"SI, CI, Instalments",                                subject:"Quant",     weight:2 },
-  { id:"q10", name:"Time, Speed & Distance",         sub:"Trains, Boats, Races",                               subject:"Quant",     weight:2 },
-  { id:"q11", name:"Time & Work",                    sub:"Pipes & Cisterns, Work efficiency",                  subject:"Quant",     weight:2 },
-  { id:"q12", name:"Probability",                    sub:"Classical, Conditional",                             subject:"Quant",     weight:2 },
-  { id:"q13", name:"Permutation & Combination",      sub:"Arrangement, Selection",                             subject:"Quant",     weight:2 },
-  { id:"q14", name:"Mixture & Alligation",           sub:"Weighted averages, Vessels",                         subject:"Quant",     weight:1 },
-  { id:"q15", name:"Partnership",                    sub:"Profit sharing, Time-ratio",                         subject:"Quant",     weight:1 },
-  { id:"q16", name:"Ages",                           sub:"Linear equations for age problems",                  subject:"Quant",     weight:1 },
+  { id:"q1", name:"Number System & Simplification", sub:"BODMAS, Approximation, Surds", subject:"Quant", weight:2 },
+  { id:"q2", name:"Number Series", sub:"Missing term, Wrong term", subject:"Quant", weight:2 },
+  { id:"q3", name:"Quadratic Equations", sub:"Comparing roots of two equations", subject:"Quant", weight:2 },
+  { id:"q4", name:"Data Interpretation", sub:"Bar, Line, Pie, Tabular, Caselet", subject:"Quant", weight:5 },
+  { id:"q5", name:"Percentage", sub:"Increase/Decrease, Applications", subject:"Quant", weight:2 },
+  { id:"q6", name:"Ratio & Proportion", sub:"Direct, Inverse, Mixtures", subject:"Quant", weight:2 },
+  { id:"q7", name:"Average", sub:"Mean, Weighted average", subject:"Quant", weight:1 },
+  { id:"q8", name:"Profit & Loss", sub:"SP/CP, Discount, Marked price", subject:"Quant", weight:2 },
+  { id:"q9", name:"Simple & Compound Interest", sub:"SI, CI, Instalments", subject:"Quant", weight:2 },
+  { id:"q10", name:"Time, Speed & Distance", sub:"Trains, Boats, Races", subject:"Quant", weight:2 },
+
   // English
-  { id:"e1",  name:"Reading Comprehension",          sub:"Main idea, Inference, Vocab in context",             subject:"English",   weight:3 },
-  { id:"e2",  name:"Cloze Test",                     sub:"Contextual word filling",                            subject:"English",   weight:2 },
-  { id:"e3",  name:"Error Detection",                sub:"Grammatical errors in sentences",                    subject:"English",   weight:2 },
-  { id:"e4",  name:"Sentence Improvement",           sub:"Replace underlined part",                            subject:"English",   weight:1 },
-  { id:"e5",  name:"Fillers",                        sub:"Single & Double fillers",                            subject:"English",   weight:2 },
-  { id:"e6",  name:"Para Jumbles",                   sub:"Rearranging 5-6 sentences",                          subject:"English",   weight:2 },
-  { id:"e7",  name:"Vocabulary",                     sub:"Synonyms, Antonyms, Idioms, Phrases",                subject:"English",   weight:2 },
-  { id:"e8",  name:"Sentence Connectors",            sub:"Joining sentences logically",                        subject:"English",   weight:1 },
-  { id:"e9",  name:"Word Usage / Spotting Errors",   sub:"Correct usage, Misfit words",                        subject:"English",   weight:1 },
+  { id:"e1", name:"Reading Comprehension", sub:"Main idea, Inference, Vocab in context", subject:"English", weight:3 },
+  { id:"e2", name:"Cloze Test", sub:"Contextual word filling", subject:"English", weight:2 },
+  { id:"e3", name:"Error Detection", sub:"Grammar errors", subject:"English", weight:2 },
+  { id:"e4", name:"Sentence Improvement", sub:"Replace underlined part", subject:"English", weight:1 },
+  { id:"e5", name:"Fillers", sub:"Single & Double fillers", subject:"English", weight:2 },
+  { id:"e6", name:"Para Jumbles", sub:"Sentence rearrangement", subject:"English", weight:2 },
+  { id:"e7", name:"Vocabulary", sub:"Synonyms, Antonyms, Idioms", subject:"English", weight:2 },
+
+  // GA
+  { id:"g1", name:"Banking Awareness", sub:"RBI, Banking Terms, Economy", subject:"GA", weight:3 },
+  { id:"g2", name:"Current Affairs", sub:"National, International, Economy", subject:"GA", weight:3 },
+  { id:"g3", name:"Static GK", sub:"Countries, Capitals, Bank HQ", subject:"GA", weight:2 },
+
+  // Computer
+  { id:"c1", name:"Computer Fundamentals", sub:"Hardware, Software, Memory", subject:"Computer", weight:2 },
+  { id:"c2", name:"Internet & Networking", sub:"Browser, Security, Networks", subject:"Computer", weight:2 },
+  { id:"c3", name:"MS Office", sub:"Word, Excel, PowerPoint", subject:"Computer", weight:1 },
+
+  // Descriptive
+  { id:"d1", name:"Essay Writing", sub:"Economy, Banking topics", subject:"Descriptive", weight:1 },
+  { id:"d2", name:"Letter Writing", sub:"Formal & Informal", subject:"Descriptive", weight:1 },
+
 ];
 
 const ALL_TOPICS = {
-  Reasoning: FLAT_TOPICS.filter(t => t.subject === "Reasoning"),
-  Quant:     FLAT_TOPICS.filter(t => t.subject === "Quant"),
-  English:   FLAT_TOPICS.filter(t => t.subject === "English"),
+  Reasoning:   FLAT_TOPICS.filter(t => t.subject === "Reasoning"),
+  Quant:       FLAT_TOPICS.filter(t => t.subject === "Quant"),
+  English:     FLAT_TOPICS.filter(t => t.subject === "English"),
+  GA:          FLAT_TOPICS.filter(t => t.subject === "GA"),
+  Computer:    FLAT_TOPICS.filter(t => t.subject === "Computer"),
+  Descriptive: FLAT_TOPICS.filter(t => t.subject === "Descriptive"),
 };
 
 const SKIP_TOPICS = [
-  { name:"Computer Aptitude",       reason:"Only in Mains — not in Prelims" },
-  { name:"Banking Awareness",       reason:"Mains only — don't sacrifice Prelims time" },
-  { name:"General Knowledge",       reason:"Not directly tested in Prelims" },
-  { name:"Current Affairs",         reason:"Only in Mains — focus on Prelims first" },
-  { name:"Essay / Letter Writing",  reason:"Mains Descriptive only" },
-  { name:"Advanced Statistics",     reason:"Not in SBI PO pattern" },
-  { name:"Geometry & Mensuration",  reason:"Very rarely appears — low ROI for Prelims" },
-  { name:"Trigonometry",            reason:"Not in SBI PO Prelims syllabus" },
+  { name:"Advanced Statistics", reason:"Not in SBI PO syllabus" },
+  { name:"Geometry & Mensuration", reason:"Very low weightage" },
+  { name:"Trigonometry", reason:"Rarely asked in SBI PO" },
 ];
 
-const SUBJ_COLOR = { Reasoning:"#3B82F6", Quant:"#F59E0B", English:"#22C55E" };
-
+const SUBJ_COLOR = {
+  Reasoning:"#3B82F6",
+  Quant:"#F59E0B",
+  English:"#22C55E",
+  GA:"#EF4444",
+  Computer:"#8B5CF6",
+  Descriptive:"#EC4899"
+};
 // ─── HELPERS ──────────────────────────────────────────────────────────────────
 const pad = n => String(n).padStart(2,"0");
 const daysBetween = (a,b) => Math.floor((b-a)/86400000);
@@ -102,72 +114,311 @@ function getPhase(d) {
 }
 
 function getDayTasks(dayNum, isWeekend, phase) {
-  const t = FLAT_TOPICS[dayNum % FLAT_TOPICS.length];
-  const { subject: subj, name: topic, sub } = t;
 
+  const mainTopic = FLAT_TOPICS[dayNum % FLAT_TOPICS.length];
+
+  const gaTopic =
+    ALL_TOPICS.GA[dayNum % ALL_TOPICS.GA.length];
+
+  const compTopic =
+    ALL_TOPICS.Computer[dayNum % ALL_TOPICS.Computer.length];
+
+  const descTopic =
+    ALL_TOPICS.Descriptive[dayNum % ALL_TOPICS.Descriptive.length];
+
+  const {
+    subject: subj,
+    name: topic,
+    sub
+  } = mainTopic;
+
+  // ───────────────── WEEKEND ─────────────────
   if (isWeekend) {
-    if (phase.id === 1) return [
-      { time:"8:00–9:00 AM",    act:`[${subj}] Deep Theory`,           detail:`${topic} — read concept thoroughly` },
-      { time:"9:00–10:30 AM",   act:`[${subj}] Concept Practice`,      detail:`${sub} — solve 30–40 questions` },
-      { time:"10:30–11:00 AM",  act:"Break + Short Notes",             detail:"Summarise key points in notebook" },
-      { time:"11:00 AM–1:00 PM",act:`[${subj}] Advanced Problems`,     detail:`${topic} — PYQs, high-difficulty Qs` },
-      { time:"2:00–4:00 PM",    act:"Sectional Mock (Full, Timed)",    detail:"60-Q section under exam conditions" },
-      { time:"4:00–5:00 PM",    act:"Mock Analysis",                   detail:"Error log, formula re-check" },
-      { time:"5:00–6:00 PM",    act:"Weak Topic Extra Drill",          detail:"Pick your weakest sub-topic and drill" },
-      { time:"6:00–7:00 PM",    act:"Weekly Consolidation",            detail:"Summarise the week's topics in notebook" },
-    ];
-    if (phase.id === 2) return [
-      { time:"8:00–9:30 AM",    act:`[${subj}] Revision`,              detail:`${topic} — short notes + 20 Qs` },
-      { time:"9:30–11:00 AM",   act:"Full Mock Test #1",               detail:"Complete 100-Q prelims mock in 60 min" },
-      { time:"11:00–12:00 PM",  act:"Mock Analysis",                   detail:"Detailed error analysis, note patterns" },
-      { time:"1:00–3:00 PM",    act:"Targeted Weak Area Drill",        detail:"From mock analysis — fix weak spots" },
-      { time:"3:00–5:00 PM",    act:"Full Mock Test #2",               detail:"Second mock — beat your previous score" },
-      { time:"5:00–6:00 PM",    act:"Mock Comparison + Planning",      detail:"Compare scores, plan next week" },
-      { time:"6:00–7:00 PM",    act:"Light Banking News",              detail:"5 important banking/economy headlines" },
-    ];
-    if (phase.id === 3) return [
-      { time:"8:00–9:00 AM",    act:"Formula Blast Revision",          detail:"All formulas: Quant + Reasoning shortcuts" },
-      { time:"9:00–11:00 AM",   act:"Full Mock Test #1 (60 min)",      detail:"Strict exam simulation" },
-      { time:"11:00–12:00 PM",  act:"Detailed Mock Analysis",          detail:"Section-by-section error review" },
-      { time:"12:30–2:30 PM",   act:"Full Mock Test #2",               detail:"Focus on accuracy + speed" },
-      { time:"2:30–4:00 PM",    act:`Speed Drill — ${subj}`,           detail:"Rapid-fire 50 questions in 25 min" },
-      { time:"4:00–5:00 PM",    act:"PYQ Practice",                    detail:"Last 5 years SBI PO Prelims PYQs" },
-      { time:"5:00–6:30 PM",    act:"English Sprint",                  detail:"2 full RC passages + 2 Cloze tests" },
-      { time:"6:30–7:00 PM",    act:"Day Summary",                     detail:"Write 5 things you improved today" },
-    ];
+
+    if (phase.id === 1) {
+      return [
+
+        {
+          time:"8:00–9:00 AM",
+          act:`[${subj}] Deep Theory`,
+          detail:`${topic} — learn concepts`
+        },
+
+        {
+          time:"9:00–10:00 AM",
+          act:`[GA] ${gaTopic.name}`,
+          detail:gaTopic.sub
+        },
+
+        {
+          time:"10:00–11:00 AM",
+          act:`[Computer] ${compTopic.name}`,
+          detail:compTopic.sub
+        },
+
+        {
+          time:"11:00 AM–1:00 PM",
+          act:`[${subj}] Practice`,
+          detail:`${sub} — solve questions`
+        },
+
+        {
+          time:"2:00–4:00 PM",
+          act:"Sectional Mock",
+          detail:"Timed practice"
+        },
+
+        {
+          time:"4:00–5:00 PM",
+          act:"Mock Analysis",
+          detail:"Analyse mistakes"
+        },
+
+        {
+          time:"5:00–6:00 PM",
+          act:`[Descriptive] ${descTopic.name}`,
+          detail:descTopic.sub
+        },
+      ];
+    }
+
+    if (phase.id === 2) {
+      return [
+
+        {
+          time:"7:00–8:00 AM",
+          act:`[${subj}] Revision`,
+          detail:`${topic} revision`
+        },
+
+        {
+          time:"8:00–9:00 AM",
+          act:`[GA] ${gaTopic.name}`,
+          detail:gaTopic.sub
+        },
+
+        {
+          time:"9:00–10:00 AM",
+          act:`[Computer] ${compTopic.name}`,
+          detail:compTopic.sub
+        },
+
+        {
+          time:"10:00–11:00 AM",
+          act:`[${subj}] Mixed Practice`,
+          detail:"Timed questions"
+        },
+
+        {
+          time:"11:00–12:00 PM",
+          act:`[Descriptive] ${descTopic.name}`,
+          detail:"Essay / Letter writing"
+        },
+
+        {
+          time:"2:00–4:00 PM",
+          act:"Full Length Mock",
+          detail:"Prelims + Mains practice"
+        },
+      ];
+    }
+
+    if (phase.id === 3) {
+      return [
+
+        {
+          time:"7:00–8:00 AM",
+          act:`[GA] ${gaTopic.name}`,
+          detail:"Daily current affairs revision"
+        },
+
+        {
+          time:"8:00–9:00 AM",
+          act:`[${subj}] Speed Drill`,
+          detail:"Fast solving practice"
+        },
+
+        {
+          time:"9:00–10:00 AM",
+          act:`[Computer] ${compTopic.name}`,
+          detail:compTopic.sub
+        },
+
+        {
+          time:"10:00–11:00 AM",
+          act:"Mock Test",
+          detail:"Sectional speed test"
+        },
+
+        {
+          time:"11:00–12:00 PM",
+          act:`[Descriptive] ${descTopic.name}`,
+          detail:"Essay / Letter practice"
+        },
+      ];
+    }
+
     return [
-      { time:"7:00–8:00 AM",    act:"Formula & Shortcut Revision",     detail:"Last-minute formula sheet review" },
-      { time:"8:00–10:00 AM",   act:"Full Mock Test + Analysis",       detail:"60-min prelims simulation + deep analysis" },
-      { time:"10:30–12:00 PM",  act:"Full Mock Test #2",               detail:"Aim for 90%+ accuracy" },
-      { time:"1:00–3:00 PM",    act:"Top-50 Mistakes Review",          detail:"Error log — never repeat the same mistake" },
-      { time:"3:00–5:00 PM",    act:"Section Speed Drill",             detail:"Reasoning 20m + Quant 20m + English 20m" },
-      { time:"5:00–6:00 PM",    act:"Mental Math Practice",            detail:"Rapid calculation and approximation drills" },
-      { time:"6:00–7:00 PM",    act:"Relax + Visualise",               detail:"Light walk, review your journey, sleep well" },
-    ];
-  } else {
-    if (phase.id === 1) return [
-      { time:"7:00–8:00 AM",    act:`[${subj}] Theory`,                detail:`${topic} — read concept, note formulas/rules` },
-      { time:"9:00–9:30 PM",    act:`[${subj}] Practice`,              detail:`${topic} — solve 20 questions` },
-      { time:"9:30–10:30 PM",   act:`[${subj}] Deep Drill`,            detail:`${sub} — focus on weak sub-areas` },
-      { time:"10:30–11:00 PM",  act:"Review + Preview",                detail:"Revise today's notes, check tomorrow's topic" },
-    ];
-    if (phase.id === 2) return [
-      { time:"7:00–8:00 AM",    act:`[${subj}] Revision`,              detail:`${topic} — re-read short notes + formulas` },
-      { time:"9:00–10:00 PM",   act:`[${subj}] Mixed Practice`,        detail:"30 questions timed (30 min)" },
-      { time:"10:00–10:30 PM",  act:"Error Log Review",                detail:"Review previously wrong answers" },
-      { time:"10:30–11:00 PM",  act:"Sectional Quiz",                  detail:"15 Qs in 15 min — self-timed mini-test" },
-    ];
-    if (phase.id === 3) return [
-      { time:"7:00–7:30 AM",    act:`[${subj}] Flash Revision`,        detail:`${topic} — quick scan of formula sheet` },
-      { time:"9:00–10:30 PM",   act:`[${subj}] Speed Drill`,           detail:"40 questions in 30 min — race the clock" },
-      { time:"10:30–11:00 PM",  act:"Mock Section Practice",           detail:"One section of a mock (20 min)" },
-    ];
-    return [
-      { time:"7:00–8:00 AM",    act:"Full Mock Part 1",                detail:"Reasoning + English (40 min)" },
-      { time:"9:00–10:00 PM",   act:"Full Mock Part 2",                detail:"Quantitative Aptitude (20 min)" },
-      { time:"10:00–11:00 PM",  act:"Mock Analysis",                   detail:"Identify mistakes, revise weak spots" },
+
+      {
+        time:"7:00–8:00 AM",
+        act:`[GA] ${gaTopic.name}`,
+        detail:gaTopic.sub
+      },
+
+      {
+        time:"8:00–9:00 AM",
+        act:"Full Length Mains Mock",
+        detail:"Complete mock test"
+      },
+
+      {
+        time:"9:00–10:00 AM",
+        act:"Mock Analysis",
+        detail:"Analyse weak areas"
+      },
+
+      {
+        time:"10:00–11:00 AM",
+        act:`[Descriptive] ${descTopic.name}`,
+        detail:"Essay + Letter practice"
+      },
     ];
   }
+
+  // ───────────────── WEEKDAY ─────────────────
+
+  if (phase.id === 1) {
+    return [
+
+      {
+        time:"7:00–8:00 AM",
+        act:`[${subj}] Theory`,
+        detail:`${topic}`
+      },
+
+      {
+        time:"8:00–8:30 AM",
+        act:`[GA] ${gaTopic.name}`,
+        detail:"Current affairs revision"
+      },
+
+      {
+        time:"9:00–10:00 PM",
+        act:`[${subj}] Practice`,
+        detail:`${sub}`
+      },
+
+      {
+        time:"10:00–10:30 PM",
+        act:`[Computer] ${compTopic.name}`,
+        detail:compTopic.sub
+      },
+
+      {
+        time:"10:30–11:00 PM",
+        act:`[Descriptive] ${descTopic.name}`,
+        detail:"Essay / Letter writing"
+      },
+    ];
+  }
+
+  if (phase.id === 2) {
+    return [
+
+      {
+        time:"7:00–8:00 AM",
+        act:`[${subj}] Revision`,
+        detail:`${topic}`
+      },
+
+      {
+        time:"8:00–8:30 AM",
+        act:`[GA] ${gaTopic.name}`,
+        detail:gaTopic.sub
+      },
+
+      {
+        time:"9:00–10:00 PM",
+        act:`[${subj}] Mixed Practice`,
+        detail:"Timed practice"
+      },
+
+      {
+        time:"10:00–10:30 PM",
+        act:`[Computer] ${compTopic.name}`,
+        detail:compTopic.sub
+      },
+
+      {
+        time:"10:30–11:00 PM",
+        act:`[Descriptive] ${descTopic.name}`,
+        detail:"Essay / Letter"
+      },
+    ];
+  }
+
+  if (phase.id === 3) {
+    return [
+
+      {
+        time:"7:00–7:30 AM",
+        act:`[GA] ${gaTopic.name}`,
+        detail:"Current affairs"
+      },
+
+      {
+        time:"7:30–8:00 AM",
+        act:`[${subj}] Flash Revision`,
+        detail:topic
+      },
+
+      {
+        time:"9:00–10:00 PM",
+        act:`[${subj}] Speed Drill`,
+        detail:"40 questions"
+      },
+
+      {
+        time:"10:00–10:30 PM",
+        act:`[Computer] ${compTopic.name}`,
+        detail:compTopic.sub
+      },
+
+      {
+        time:"10:30–11:00 PM",
+        act:`[Descriptive] ${descTopic.name}`,
+        detail:"Essay practice"
+      },
+    ];
+  }
+
+  return [
+
+    {
+      time:"7:00–8:00 AM",
+      act:`[GA] ${gaTopic.name}`,
+      detail:gaTopic.sub
+    },
+
+    {
+      time:"9:00–10:00 PM",
+      act:"Full Length Mains Mock",
+      detail:"Complete mock"
+    },
+
+    {
+      time:"10:00–10:30 PM",
+      act:"Mock Analysis",
+      detail:"Analyse mistakes"
+    },
+
+    {
+      time:"10:30–11:00 PM",
+      act:`[Descriptive] ${descTopic.name}`,
+      detail:"Essay / Letter"
+    },
+  ];
 }
 
 // ─── STORAGE ──────────────────────────────────────────────────────────────────
@@ -246,10 +497,12 @@ function Checkbox({ checked, onChange, label, sub }) {
   );
 }
 
-// ─── MAIN APP ─────────────────────────────────────────────────────────────────
 export default function SBIPOTracker() {
-  const realNow     = new Date();
-  const [viewDate, setViewDate] = useState(realNow);  // date being viewed (for calendar navigation)
+  // Store current date only once
+  const [realNow] = useState(() => new Date());
+
+  // Calendar browsing date
+  const [viewDate, setViewDate] = useState(() => new Date()); // date being viewed (for calendar navigation)
   const isToday     = viewDate.toDateString() === realNow.toDateString();
 
   const dayOfWeek   = viewDate.getDay();
@@ -357,69 +610,121 @@ export default function SBIPOTracker() {
 
   // ── Calendar picker component
   function CalendarPicker() {
-    const [calYear,  setCalYear]  = useState(viewDate.getFullYear());
-    const [calMonth, setCalMonth] = useState(viewDate.getMonth());
-    const firstDay = new Date(calYear, calMonth, 1).getDay();
-    const daysInMonth = new Date(calYear, calMonth+1, 0).getDate();
-    const minDate = new Date("2026-05-25");
-    const maxDate = new Date("2027-08-01");
-    const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-    const prevMonth = () => {
-      if (calMonth === 0) { setCalMonth(11); setCalYear(y=>y-1); }
-      else setCalMonth(m=>m-1);
-    };
-    const nextMonth = () => {
-      if (calMonth === 11) { setCalMonth(0); setCalYear(y=>y+1); }
-      else setCalMonth(m=>m+1);
-    };
+  const monthNames = ["Jan","Feb","Mar","Apr","May","Jun",
+                      "Jul","Aug","Sep","Oct","Nov","Dec"];
 
-    return (
-      <div style={{
-        position:"fixed", inset:0, zIndex:200,
-        background:"rgba(0,0,0,0.8)", display:"flex", alignItems:"center", justifyContent:"center"
-      }} onClick={() => setShowCalendar(false)}>
-        <div onClick={e=>e.stopPropagation()} style={{
-          background:"#0D1B2E", border:"1px solid rgba(251,208,56,0.3)",
-          borderRadius:16, padding:20, width:320, boxShadow:"0 20px 60px rgba(0,0,0,0.7)"
+  const currentMonth = viewDate.getMonth();
+  const currentYear  = viewDate.getFullYear();
+
+  const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+  const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+  const minDate = new Date("2026-05-25");
+  const maxDate = new Date("2027-08-01");
+
+  const prevMonth = () => {
+    const d = new Date(viewDate);
+
+    d.setMonth(d.getMonth() - 1);
+
+    if (d >= minDate) {
+      setViewDate(d);
+    }
+  };
+
+  const nextMonth = () => {
+    const d = new Date(viewDate);
+
+    d.setMonth(d.getMonth() + 1);
+
+    if (d <= maxDate) {
+      setViewDate(d);
+    }
+  };
+
+  return (
+    <div
+      style={{
+        position:"fixed",
+        inset:0,
+        zIndex:200,
+        background:"rgba(0,0,0,0.8)",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center"
+      }}
+      onClick={() => setShowCalendar(false)}
+    >
+
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          background:"#0D1B2E",
+          border:"1px solid rgba(251,208,56,0.3)",
+          borderRadius:16,
+          padding:20,
+          width:320
+        }}
+      >
+
+        <div style={{
+          display:"flex",
+          justifyContent:"space-between",
+          alignItems:"center",
+          marginBottom:16
         }}>
-          <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:16 }}>
-            <button onClick={prevMonth} style={{ background:"rgba(255,255,255,0.07)", border:"none", borderRadius:8, padding:"6px 10px", color:"#94A3B8", cursor:"pointer", fontSize:16 }}>‹</button>
-            <div style={{ fontSize:15, fontWeight:700, color:"#FBD038" }}>{monthNames[calMonth]} {calYear}</div>
-            <button onClick={nextMonth} style={{ background:"rgba(255,255,255,0.07)", border:"none", borderRadius:8, padding:"6px 10px", color:"#94A3B8", cursor:"pointer", fontSize:16 }}>›</button>
+
+          <button onClick={prevMonth}>‹</button>
+
+          <div>
+            {monthNames[currentMonth]} {currentYear}
           </div>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(7,1fr)", gap:3, marginBottom:8 }}>
-            {["Su","Mo","Tu","We","Th","Fr","Sa"].map(d=>(
-              <div key={d} style={{ textAlign:"center", fontSize:10, color:"#475569", fontWeight:700, padding:"2px 0" }}>{d}</div>
-            ))}
-          </div>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(7,1fr)", gap:3 }}>
-            {Array(firstDay).fill(null).map((_,i)=><div key={`e${i}`}/>)}
-            {Array(daysInMonth).fill(null).map((_,i)=>{
-              const day = i+1;
-              const d = new Date(calYear, calMonth, day);
-              const isDisabled = d < minDate || d > maxDate;
-              const isSelected = d.toDateString() === viewDate.toDateString();
-              const isRealToday= d.toDateString() === realNow.toDateString();
-              return (
-                <button key={day} disabled={isDisabled} onClick={()=>{ setViewDate(d); setShowCalendar(false); }} style={{
-                  padding:"6px 2px", borderRadius:7, border:"none", cursor:isDisabled?"not-allowed":"pointer",
-                  background: isSelected ? "#FBD038" : isRealToday ? "rgba(251,208,56,0.2)" : "rgba(255,255,255,0.04)",
-                  color: isDisabled ? "#1E293B" : isSelected ? "#0A1628" : isRealToday ? "#FBD038" : "#CBD5E1",
-                  fontSize:12, fontWeight: isSelected||isRealToday ? 700 : 400
-                }}>{day}</button>
-              );
-            })}
-          </div>
-          <button onClick={()=>{ setViewDate(realNow); setShowCalendar(false); }} style={{
-            width:"100%", marginTop:14, padding:"10px", borderRadius:10,
-            background:"rgba(251,208,56,0.12)", border:"1px solid rgba(251,208,56,0.3)",
-            color:"#FBD038", fontSize:13, fontWeight:700, cursor:"pointer"
-          }}>Go to Today</button>
+
+          <button onClick={nextMonth}>›</button>
+
+        </div>
+
+        <div style={{
+          display:"grid",
+          gridTemplateColumns:"repeat(7,1fr)",
+          gap:3
+        }}>
+
+          {["Su","Mo","Tu","We","Th","Fr","Sa"].map(d => (
+            <div key={d}>{d}</div>
+          ))}
+
+          {Array(firstDay).fill(null).map((_,i)=>
+            <div key={i}></div>
+          )}
+
+          {Array(daysInMonth).fill(null).map((_,i)=>{
+
+            const day = i + 1;
+
+            const d = new Date(currentYear, currentMonth, day);
+
+            const isDisabled = d < minDate || d > maxDate;
+
+            return (
+              <button
+                key={day}
+                disabled={isDisabled}
+                onClick={() => {
+                  setViewDate(d);
+                  setShowCalendar(false);
+                }}
+              >
+                {day}
+              </button>
+            );
+          })}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
   // ── RENDER ────────────────────────────────────────────────────────────────
   return (
@@ -485,7 +790,7 @@ export default function SBIPOTracker() {
               fontSize:12, fontWeight:700, letterSpacing:0.5
             }}>📅 {isToday ? "Today" : viewDate.toLocaleDateString("en-IN",{ day:"2-digit", month:"short", year:"2-digit" })}</button>
             {!isToday && (
-              <button onClick={()=>setViewDate(realNow)} style={{
+              <button onClick={() => setViewDate(new Date(realNow))}style={{
                 flex:"0 0 60px", height:36, borderRadius:8, border:"1px solid rgba(34,197,94,0.3)",
                 background:"rgba(34,197,94,0.08)", color:"#22C55E", cursor:"pointer", fontSize:11, fontWeight:700
               }}>Today</button>
@@ -836,7 +1141,16 @@ export default function SBIPOTracker() {
                     }}>
                       <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:5 }}>
                         <div style={{ fontSize:14, fontWeight:900, color:SUBJ_COLOR[subj] }}>
-                          {{ Reasoning:"🧠", Quant:"📐", English:"📖" }[subj]} {subj}
+                          {
+                            {
+                               Reasoning:"🧠",
+                              Quant:"📐",
+                                English:"📖",
+                                GA:"📰",
+                                Computer:"💻",
+                                Descriptive:"✍️"
+                              }[subj]
+                                    } {subj}
                         </div>
                         <div style={{ fontSize:12, color:"#94A3B8", fontFamily:"monospace" }}>{done}/{total}</div>
                       </div>
